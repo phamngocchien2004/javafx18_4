@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="listviewsp.Controller">
+   <children>
+      <TextField fx:id="txtName" layoutX="24.0" layoutY="73.0" promptText="Tên sản phẩm" />
+      <TextField fx:id="txtGia" layoutX="24.0" layoutY="128.0" promptText="Giá" />
+      <TextField fx:id="txtSoLuong" layoutX="24.0" layoutY="185.0" promptText="Số lượng" />
+      <Button onAction="#submit" layoutX="24.0" layoutY="437.0" mnemonicParsing="false" text="Add" />
+      <Button onAction="#delete" layoutX="147.0" layoutY="437.0" mnemonicParsing="false" text="Delete" />
+      <ListView onMouseClicked="#editProduct"  fx:id="listview" layoutX="320.0" layoutY="73.0" prefHeight="400.0" prefWidth="200.0" />
+      <TextArea fx:id="txtMoTa" layoutX="24.0" layoutY="257.0" prefHeight="150.0" prefWidth="200.0" />
+   </children>
+</Pane>
